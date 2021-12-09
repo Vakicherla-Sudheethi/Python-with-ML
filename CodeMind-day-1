@@ -1,0 +1,100 @@
+'''It was Raj's first day at school. His teacher Anu asked the students to meet every other student in the class and to introduce themselves. The teacher asked them to do handshakes when they meet each other.
+If there are n number of students in the class then find the total number of handshakes made by the students.
+Example 1: 
+Input:
+15
+Output: 
+105
+Input Format:Consists of 1 integer
+Output Format:Consists of 1 integer'''
+n=int(input())
+tot=n*(n+1)/2
+print(int(tot))
+
+Adding Two Numbers
+You just need to take two numbers as input from stdin and print the sum of those two numbers to the stdout.
+Input Format
+You will be taking two numbers as an input one on each line from stdin.
+Constraints
+1 <= N <= 10000
+Output Format
+You need to print the sum to the stdout.
+Sample Input:Input:
+10
+20
+Output:30
+a=int(input())
+b=int(input())
+print(a+b)
+
+#Take Input And Print
+Take Input And Print  
+You just need to take input from stdin and print it to the stdout.
+Input Format
+You will be taking a string as an input from stdin.
+Constraints
+1 <= |S| <= 1000
+Output Format
+You need to print the input string to the stdout.
+Sample Input:Input:
+Hello CodeMind
+Output:
+Hello CodeMind
+
+a=input()
+print(a)
+
+#
+Modulus
+Modulus 
+You just need to take two numbers as input from stdin and you need to find modulus of them.
+Input Format
+You will be taking two numbers as an input from stdin one on each line respectively.
+Constraints
+1 <= N <= 10000
+Output Format
+You need to print the output of the modulus to stdout.
+Sample Input
+Input
+102
+60
+Output
+40
+
+a=int(input())
+b=int(input())
+print(a%b)
+#
+Division
+Division
+
+You just need to take two numbers as input from stdin and you need to divide them.
+
+Input Format
+
+You will be taking two numbers as an input from stdin one on each line respectively.
+
+Constraints
+
+1 <= N <= 10000
+
+Output Format
+
+You need to print the output of the division to stdout.
+
+Sample Input:
+
+Input
+
+102
+
+60
+
+Output
+
+1
+A) a=int(input())
+b=int(input())
+print(a//b)
+
+
