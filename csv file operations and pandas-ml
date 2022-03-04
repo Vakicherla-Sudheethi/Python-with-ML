@@ -1,0 +1,60 @@
+import csv
+data=[]
+with open(r'C:\Users\fluff\OneDrive\Desktop\Py+ML\IMDB-Movie-Data.csv','r') as f1:
+    records=list(csv.reader(f1))
+    for r in records[1:]:
+        data.append(r)
+ #to extract the 2016 movies
+ import csv
+data=[]
+c=0
+with open(r'C:\Users\fluff\OneDrive\Desktop\Py+ML\IMDB-Movie-Data.csv','r') as f1:
+    records=list(csv.reader(f1))
+    for r in records[1:]:
+        data.append(r)
+for i in data:
+    if i[6]=='2016':
+        c+=1
+print(c)
+#using pandas count the no of movies in 2016
+import pandas as pd
+data=pd.read_csv(r'C:\Users\fluff\OneDrive\Desktop\Py+ML\IMDB-Movie-Data.csv')
+print (data[data ["Year"]==2016].count())
+
+o/p:
+297
+Rank                  297
+Title                 297
+Genre                 297
+Description           297
+Director              297
+Actors                297
+Year                  297
+Runtime (Minutes)     297
+Rating                297
+Votes                 297
+Revenue (Millions)    205
+Metascore             268
+dtype: int64
+#using pandas display all the movies in all years
+import pandas as pd
+data=pd.read_csv(r'C:\Users\fluff\OneDrive\Desktop\Py+ML\IMDB-Movie-Data.csv')
+print (data[data ["Year"]==2016].count())
+print(data["Year"].unique())
+print(data["Year"].value_counts())
+
+o/p:
+
+[2014 2012 2016 2015 2007 2011 2008 2006 2009 2010 2013]
+2016    297
+2015    127
+2014     98
+2013     91
+2012     64
+2011     63
+2010     60
+2007     53
+2008     52
+2009     51
+2006     44
+Name: Year, dtype: int64
